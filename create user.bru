@@ -1,0 +1,22 @@
+meta {
+  name: create user
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:3000/signup
+  body: json
+  auth: none
+}
+
+query {
+  ~name: this is a test
+}
+
+body:json {
+  {
+    "email": "",
+    "password": 45
+  }
+}
